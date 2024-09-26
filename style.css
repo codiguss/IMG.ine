@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+
+    background: rgb(228, 228, 228);
+    font-family: "Inria Sans", sans-serif;
+
+    font-size: 1.6rem;
+}
+
+header {
+    background: white;
+    height: 6rem;
+    box-shadow: .1rem .1rem 1rem rgb(165, 165, 165);
+    
+    display: flex;;
+
+}
+
+header nav {
+    display: flex;
+    margin: 2rem auto 2rem 2rem;
+    gap: 2rem;
+}
+
+
+header nav a {
+    color: rgb(97, 97, 97);
+    text-decoration: none;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 600;
+}
+
+header nav a:hover {
+    color: rgb(34, 34, 34);
+}
+
+header input {
+    background: rgb(228, 228, 228);
+    border: solid rgb(197, 197, 197) .1rem;
+    height: 4rem;
+    width: 30rem;
+    margin: auto;
+    border-radius: .8rem;
+    padding: .1rem 1rem;
+    transition: background .2s;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+header input:hover {
+    background: rgb(212, 212, 212);
+
+}
+
+
+.pfp {
+height: 4rem;
+width: 4rem;
+border-radius: 50%;
+margin: 1rem 1rem 0 auto;
+}
+
+.page {
+    align-items: center;
+}
+
+.board {
+    margin: 4rem 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 2rem;
+}
+
+.pictures {
+    background: white;
+    display: flex;
+    align-items: center;
+    width: 25rem;
+    height: 17.5rem;
+    border-radius: .5rem;
+}
+
+.pictures img {
+    width: 20rem;
+    margin: 0 auto;
+    transition: all .2s;
+}
+
+.pictures img:hover {
+    width: 21rem;
+    filter: hue-rotate(7deg) contrast(101%) saturate(150%);
+}
