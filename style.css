@@ -12,7 +12,7 @@ body {
     background: rgb(228, 228, 228);
     font-family: "Inria Sans", sans-serif;
 
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 header {
@@ -44,8 +44,12 @@ header nav a:hover {
     color: rgb(34, 34, 34);
 }
 
+.search-container {
+    margin: auto;
+}
 
-header input {
+
+.search-container input {
     background: rgb(228, 228, 228);
     border: solid rgb(191, 191, 191) .2rem;
     color: 97, 97, 97;
@@ -54,16 +58,23 @@ header input {
     width: 30rem;
     margin: auto 8.5rem auto 0;
     border-radius: .8rem;
-    padding: .1rem 1rem;
+    padding: .1rem 3rem;
     transition: background .2s;
     font-family: "Inria Sans", sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-header input:focus {
+.search-container img {
+    width: 2rem;
+    position: absolute;
+    margin: 1.6rem 1rem;
+    filter: opacity(50%);
+}
+
+.search-container input:focus {
     color: rgb(97, 97, 97);
-    outline: solid rgb(155, 155, 155) .2rem;
+    outline: solid rgb(146, 230, 255) .2rem;
 }
 
 header input:hover {
